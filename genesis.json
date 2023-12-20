@@ -1,4 +1,6 @@
 {
+  "app_name": "dhealth-testnetd",
+  "app_version": "",
   "genesis_time": "2022-10-12T20:55:14.762297Z",
   "chain_id": "dhealthtestnet",
   "initial_height": "1",
