@@ -1,0 +1,17 @@
+syntax = "proto3";
+package dhealthtestnet.dhealthtestnet;
+
+import "amino/amino.proto";
+import "gogoproto/gogo.proto";
+import "dhealthtestnet/dhealthtestnet/params.proto";
+
+option go_package = "dhealth-testnet/x/dhealthtestnet/types";
+
+// GenesisState defines the dhealthtestnet module's genesis state.
+message GenesisState {
+  // params defines all the parameters of the module.
+  Params params = 1 [
+    (gogoproto.nullable) = false,
+    (amino.dont_omitempty) = true
+  ];
+}
