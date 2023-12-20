@@ -1,10 +1,26 @@
 {
-  "app_name": "dhealth-testnetd",
-  "app_version": "",
-  "genesis_time": "2023-12-20T11:21:32.14921018Z",
+  "genesis_time": "2022-10-12T20:55:14.762297Z",
   "chain_id": "dhealthtestnet",
-  "initial_height": 1,
-  "app_hash": null,
+  "initial_height": "1",
+  "consensus_params": {
+    "block": {
+      "max_bytes": "22020096",
+      "max_gas": "-1",
+      "time_iota_ms": "1000"
+    },
+    "evidence": {
+      "max_age_num_blocks": "100000",
+      "max_age_duration": "172800000000000",
+      "max_bytes": "1048576"
+    },
+    "validator": {
+      "pub_key_types": [
+        "ed25519"
+      ]
+    },
+    "version": {}
+  },
+  "app_hash": "",
   "app_state": {
     "auth": {
       "params": {
@@ -17,16 +33,16 @@
       "accounts": [
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "cosmos1q9t7ucp67nv0dstmuh2fhzejzvk9wgvynu6ppc",
+          "address": "cosmos1gvvelaj7ymn5mq9uj3754kyu4nhxcxc3jy9jj7",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "cosmos12m3qcqhj9c5ueshzv0zx7z2qhenq0uuuzr9t0d",
+          "address": "cosmos1200uvg3g9hnee5fa6w2l4hueru6uavdvrf9ya8",
           "pub_key": null,
-          "account_number": "1",
+          "account_number": "0",
           "sequence": "0"
         }
       ]
@@ -41,7 +57,7 @@
       },
       "balances": [
         {
-          "address": "cosmos1q9t7ucp67nv0dstmuh2fhzejzvk9wgvynu6ppc",
+          "address": "cosmos1gvvelaj7ymn5mq9uj3754kyu4nhxcxc3jy9jj7",
           "coins": [
             {
               "denom": "stake",
@@ -54,7 +70,7 @@
           ]
         },
         {
-          "address": "cosmos12m3qcqhj9c5ueshzv0zx7z2qhenq0uuuzr9t0d",
+          "address": "cosmos1200uvg3g9hnee5fa6w2l4hueru6uavdvrf9ya8",
           "coins": [
             {
               "denom": "stake",
@@ -67,36 +83,18 @@
           ]
         }
       ],
-      "supply": [
-        {
-          "denom": "stake",
-          "amount": "300000000"
-        },
-        {
-          "denom": "token",
-          "amount": "30000"
-        }
-      ],
-      "denom_metadata": [],
-      "send_enabled": []
+      "supply": [],
+      "denom_metadata": []
     },
     "capability": {
       "index": "1",
       "owners": []
     },
-    "circuit": {
-      "account_permissions": [],
-      "disabled_type_urls": []
-    },
-    "consensus": null,
     "crisis": {
       "constant_fee": {
         "amount": "1000",
         "denom": "stake"
       }
-    },
-    "dhealthtestnet": {
-      "params": {}
     },
     "distribution": {
       "delegator_starting_infos": [],
@@ -106,8 +104,8 @@
       },
       "outstanding_rewards": [],
       "params": {
-        "base_proposer_reward": "0.000000000000000000",
-        "bonus_proposer_reward": "0.000000000000000000",
+        "base_proposer_reward": "0.010000000000000000",
+        "bonus_proposer_reward": "0.040000000000000000",
         "community_tax": "0.020000000000000000",
         "withdraw_addr_enabled": true
       },
@@ -120,56 +118,37 @@
     "evidence": {
       "evidence": []
     },
+    "example": {
+      "params": {}
+    },
     "feegrant": {
       "allowances": []
-    },
-    "feeibc": {
-      "fee_enabled_channels": [],
-      "forward_relayers": [],
-      "identified_fees": [],
-      "registered_counterparty_payees": [],
-      "registered_payees": []
     },
     "genutil": {
       "gen_txs": []
     },
     "gov": {
-      "constitution": "",
-      "deposit_params": null,
-      "deposits": [],
-      "params": {
-        "burn_proposal_deposit_prevote": false,
-        "burn_vote_quorum": false,
-        "burn_vote_veto": true,
-        "expedited_min_deposit": [
-          {
-            "amount": "50000000",
-            "denom": "stake"
-          }
-        ],
-        "expedited_threshold": "0.667000000000000000",
-        "expedited_voting_period": "86400s",
+      "deposit_params": {
         "max_deposit_period": "172800s",
         "min_deposit": [
           {
             "amount": "10000000",
             "denom": "stake"
           }
-        ],
-        "min_deposit_ratio": "0.010000000000000000",
-        "min_initial_deposit_ratio": "0.000000000000000000",
-        "proposal_cancel_dest": "",
-        "proposal_cancel_ratio": "0.500000000000000000",
-        "quorum": "0.334000000000000000",
-        "threshold": "0.500000000000000000",
-        "veto_threshold": "0.334000000000000000",
-        "voting_period": "172800s"
+        ]
       },
+      "deposits": [],
       "proposals": [],
       "starting_proposal_id": "1",
-      "tally_params": null,
+      "tally_params": {
+        "quorum": "0.334000000000000000",
+        "threshold": "0.500000000000000000",
+        "veto_threshold": "0.334000000000000000"
+      },
       "votes": [],
-      "voting_params": null
+      "voting_params": {
+        "voting_period": "172800s"
+      }
     },
     "group": {
       "group_members": [],
@@ -201,8 +180,7 @@
         "params": {
           "allowed_clients": [
             "06-solomachine",
-            "07-tendermint",
-            "09-localhost"
+            "07-tendermint"
           ]
         }
       },
@@ -228,9 +206,7 @@
         "active_channels": [],
         "interchain_accounts": [],
         "params": {
-          "allow_messages": [
-            "*"
-          ],
+          "allow_messages": [],
           "host_enabled": true
         },
         "port": "icahost"
@@ -251,7 +227,6 @@
       }
     },
     "params": null,
-    "runtime": null,
     "slashing": {
       "missed_blocks": [],
       "params": {
@@ -286,34 +261,9 @@
         "receive_enabled": true,
         "send_enabled": true
       },
-      "port_id": "transfer",
-      "total_escrowed": []
+      "port_id": "transfer"
     },
     "upgrade": {},
     "vesting": {}
-  },
-  "consensus": {
-    "params": {
-      "block": {
-        "max_bytes": "22020096",
-        "max_gas": "-1"
-      },
-      "evidence": {
-        "max_age_num_blocks": "100000",
-        "max_age_duration": "172800000000000",
-        "max_bytes": "1048576"
-      },
-      "validator": {
-        "pub_key_types": [
-          "ed25519"
-        ]
-      },
-      "version": {
-        "app": "0"
-      },
-      "abci": {
-        "vote_extensions_enable_height": "0"
-      }
-    }
   }
 }
