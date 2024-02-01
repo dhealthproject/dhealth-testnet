@@ -60,7 +60,7 @@ import (
 )
 
 const (
-	AccountAddressPrefix = "dhp"
+	AccountAddressPrefix = "tdh01"
 	Name                 = "dhealth-testnet"
 )
 
