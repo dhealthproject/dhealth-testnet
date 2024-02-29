@@ -20,9 +20,9 @@ import (
 
 	// this line is used by starport scaffolding # 1
 
-	modulev1 "dhealth-testnet/api/dhealthtestnet/dhealthtestnet/module"
-	"dhealth-testnet/x/dhealthtestnet/keeper"
-	"dhealth-testnet/x/dhealthtestnet/types"
+	modulev1 "github.com/dhealthproject/dhealth-testnet/api/dhealthtestnet/dhealthtestnet/module"
+	"github.com/dhealthproject/dhealth-testnet/x/dhealthtestnet/keeper"
+	"github.com/dhealthproject/dhealth-testnet/x/dhealthtestnet/types"
 )
 
 var (

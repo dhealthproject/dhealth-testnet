@@ -6,9 +6,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	keepertest "dhealth-testnet/testutil/keeper"
-	"dhealth-testnet/x/dhealthtestnet/keeper"
-	"dhealth-testnet/x/dhealthtestnet/types"
+	keepertest "github.com/dhealthproject/dhealth-testnet/testutil/keeper"
+	"github.com/dhealthproject/dhealth-testnet/x/dhealthtestnet/keeper"
+	"github.com/dhealthproject/dhealth-testnet/x/dhealthtestnet/types"
 )
 
 func setupMsgServer(t testing.TB) (keeper.Keeper, types.MsgServer, context.Context) {

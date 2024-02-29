@@ -5,7 +5,7 @@ import (
 	serverconfig "github.com/cosmos/cosmos-sdk/server/config"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"dhealth-testnet/app"
+	"github.com/dhealthproject/dhealth-testnet/app"
 )
 
 func initSDKConfig() {

@@ -71,9 +71,9 @@ import (
 	ibcexported "github.com/cosmos/ibc-go/v8/modules/core/exported"
 	"google.golang.org/protobuf/types/known/durationpb"
 
-	dhealthtestnetmodulev1 "dhealth-testnet/api/dhealthtestnet/dhealthtestnet/module"
-	_ "dhealth-testnet/x/dhealthtestnet/module" // import for side-effects
-	dhealthtestnetmoduletypes "dhealth-testnet/x/dhealthtestnet/types"
+	dhealthtestnetmodulev1 "github.com/dhealthproject/dhealth-testnet/api/dhealthtestnet/dhealthtestnet/module"
+	_ "github.com/dhealthproject/dhealth-testnet/x/dhealthtestnet/module" // import for side-effects
+	dhealthtestnetmoduletypes "github.com/dhealthproject/dhealth-testnet/x/dhealthtestnet/types"
 	// this line is used by starport scaffolding # stargate/app/moduleImport
 )
 

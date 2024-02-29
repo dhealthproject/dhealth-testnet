@@ -5,8 +5,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	keepertest "dhealth-testnet/testutil/keeper"
-	"dhealth-testnet/x/dhealthtestnet/types"
+	keepertest "github.com/dhealthproject/dhealth-testnet/testutil/keeper"
+	"github.com/dhealthproject/dhealth-testnet/x/dhealthtestnet/types"
 )
 
 func TestGetParams(t *testing.T) {

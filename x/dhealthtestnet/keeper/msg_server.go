@@ -1,7 +1,7 @@
 package keeper
 
 import (
-	"dhealth-testnet/x/dhealthtestnet/types"
+	"github.com/dhealthproject/dhealth-testnet/x/dhealthtestnet/types"
 )
 
 type msgServer struct {
