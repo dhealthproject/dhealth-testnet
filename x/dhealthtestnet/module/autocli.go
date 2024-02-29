@@ -3,7 +3,7 @@ package dhealthtestnet
 import (
 	autocliv1 "cosmossdk.io/api/cosmos/autocli/v1"
 
-	modulev1 "dhealth-testnet/api/dhealthtestnet/dhealthtestnet"
+	modulev1 "github.com/dhealthproject/dhealth-testnet/api/dhealthtestnet/dhealthtestnet"
 )
 
 // AutoCLIOptions implements the autocli.HasAutoCLIConfig interface.

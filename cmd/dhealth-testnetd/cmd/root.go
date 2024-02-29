@@ -24,7 +24,7 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 
-	"dhealth-testnet/app"
+	"github.com/dhealthproject/dhealth-testnet/app"
 )
 
 // NewRootCmd creates a new root command for dhealth-testnetd. It is called once in the main function.

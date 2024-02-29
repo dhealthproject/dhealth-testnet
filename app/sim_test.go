@@ -31,7 +31,7 @@ import (
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/require"
 
-	"dhealth-testnet/app"
+	"github.com/dhealthproject/dhealth-testnet/app"
 )
 
 const (

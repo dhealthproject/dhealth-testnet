@@ -8,9 +8,9 @@ import (
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 	"github.com/cosmos/cosmos-sdk/x/simulation"
 
-	"dhealth-testnet/testutil/sample"
-	dhealthtestnetsimulation "dhealth-testnet/x/dhealthtestnet/simulation"
-	"dhealth-testnet/x/dhealthtestnet/types"
+	"github.com/dhealthproject/dhealth-testnet/testutil/sample"
+	dhealthtestnetsimulation "github.com/dhealthproject/dhealth-testnet/x/dhealthtestnet/simulation"
+	"github.com/dhealthproject/dhealth-testnet/x/dhealthtestnet/types"
 )
 
 // avoid unused import issue

@@ -53,10 +53,10 @@ import (
 	ibctransferkeeper "github.com/cosmos/ibc-go/v8/modules/apps/transfer/keeper"
 	ibckeeper "github.com/cosmos/ibc-go/v8/modules/core/keeper"
 
-	dhealthtestnetmodulekeeper "dhealth-testnet/x/dhealthtestnet/keeper"
+	dhealthtestnetmodulekeeper "github.com/dhealthproject/dhealth-testnet/x/dhealthtestnet/keeper"
 	// this line is used by starport scaffolding # stargate/app/moduleImport
 
-	"dhealth-testnet/docs"
+	"github.com/dhealthproject/dhealth-testnet/docs"
 )
 
 const (
