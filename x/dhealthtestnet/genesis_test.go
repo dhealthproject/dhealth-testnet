@@ -3,10 +3,10 @@ package dhealthtestnet_test
 import (
 	"testing"
 
-	keepertest "github.com/dhealthproject/dhealth-testnet/testutil/keeper"
-	"github.com/dhealthproject/dhealth-testnet/testutil/nullify"
-	dhealthtestnet "github.com/dhealthproject/dhealth-testnet/x/dhealthtestnet/module"
-	"github.com/dhealthproject/dhealth-testnet/x/dhealthtestnet/types"
+	keepertest "dhealth-testnet/testutil/keeper"
+	"dhealth-testnet/testutil/nullify"
+	"dhealth-testnet/x/dhealthtestnet"
+	"dhealth-testnet/x/dhealthtestnet/types"
 	"github.com/stretchr/testify/require"
 )
 
@@ -18,8 +18,8 @@ func TestGenesis(t *testing.T) {
 	}
 
 	k, ctx := keepertest.DhealthtestnetKeeper(t)
-	dhealthtestnet.InitGenesis(ctx, k, genesisState)
-	got := dhealthtestnet.ExportGenesis(ctx, k)
+	dhealthtestnet.InitGenesis(ctx, *k, genesisState)
+	got := dhealthtestnet.ExportGenesis(ctx, *k)
 	require.NotNil(t, got)
 
 	nullify.Fill(&genesisState)

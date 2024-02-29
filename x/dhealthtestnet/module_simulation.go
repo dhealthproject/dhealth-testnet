@@ -3,23 +3,23 @@ package dhealthtestnet
 import (
 	"math/rand"
 
+	"dhealth-testnet/testutil/sample"
+	dhealthtestnetsimulation "dhealth-testnet/x/dhealthtestnet/simulation"
+	"dhealth-testnet/x/dhealthtestnet/types"
+	"github.com/cosmos/cosmos-sdk/baseapp"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 	"github.com/cosmos/cosmos-sdk/x/simulation"
-
-	"github.com/dhealthproject/dhealth-testnet/testutil/sample"
-	dhealthtestnetsimulation "github.com/dhealthproject/dhealth-testnet/x/dhealthtestnet/simulation"
-	"github.com/dhealthproject/dhealth-testnet/x/dhealthtestnet/types"
 )
 
 // avoid unused import issue
 var (
-	_ = dhealthtestnetsimulation.FindAccount
-	_ = rand.Rand{}
 	_ = sample.AccAddress
-	_ = sdk.AccAddress{}
+	_ = dhealthtestnetsimulation.FindAccount
 	_ = simulation.MsgEntryKind
+	_ = baseapp.Paramspace
+	_ = rand.Rand{}
 )
 
 const (
@@ -40,7 +40,7 @@ func (AppModule) GenerateGenesisState(simState *module.SimulationState) {
 }
 
 // RegisterStoreDecoder registers a decoder.
-func (am AppModule) RegisterStoreDecoder(_ simtypes.StoreDecoderRegistry) {}
+func (am AppModule) RegisterStoreDecoder(_ sdk.StoreDecoderRegistry) {}
 
 // ProposalContents doesn't return any content functions for governance proposals.
 func (AppModule) ProposalContents(_ module.SimulationState) []simtypes.WeightedProposalContent {

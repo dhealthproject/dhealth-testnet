@@ -3,16 +3,16 @@ package keeper_test
 import (
 	"testing"
 
+	testkeeper "dhealth-testnet/testutil/keeper"
+	"dhealth-testnet/x/dhealthtestnet/types"
 	"github.com/stretchr/testify/require"
-
-	keepertest "github.com/dhealthproject/dhealth-testnet/testutil/keeper"
-	"github.com/dhealthproject/dhealth-testnet/x/dhealthtestnet/types"
 )
 
 func TestGetParams(t *testing.T) {
-	k, ctx := keepertest.DhealthtestnetKeeper(t)
+	k, ctx := testkeeper.DhealthtestnetKeeper(t)
 	params := types.DefaultParams()
 
-	require.NoError(t, k.SetParams(ctx, params))
+	k.SetParams(ctx, params)
+
 	require.EqualValues(t, params, k.GetParams(ctx))
 }

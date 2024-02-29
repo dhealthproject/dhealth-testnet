@@ -1,15 +1,12 @@
 syntax = "proto3";
 package dhealthtestnet.dhealthtestnet;
 
-import "amino/amino.proto";
 import "gogoproto/gogo.proto";
 
 option go_package = "dhealth-testnet/x/dhealthtestnet/types";
 
 // Params defines the parameters for the module.
 message Params {
-  option (amino.name) = "dhealthtestnet/x/dhealthtestnet/Params";
-  option (gogoproto.equal) = true;
-
+  option (gogoproto.goproto_stringer) = false;
   
 }

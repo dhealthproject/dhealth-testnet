@@ -3,11 +3,10 @@ package keeper
 import (
 	"context"
 
+	"dhealth-testnet/x/dhealthtestnet/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
-
-	"github.com/dhealthproject/dhealth-testnet/x/dhealthtestnet/types"
 )
 
 func (k Keeper) Params(goCtx context.Context, req *types.QueryParamsRequest) (*types.QueryParamsResponse, error) {
