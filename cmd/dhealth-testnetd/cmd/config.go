@@ -3,7 +3,7 @@ package cmd
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"dhealth-testnet/app"
+	"github.com/dhealthproject/dhealth-testnet/app"
 )
 
 func initSDKConfig() {

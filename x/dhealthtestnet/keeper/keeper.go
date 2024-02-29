@@ -9,7 +9,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
 
-	"dhealth-testnet/x/dhealthtestnet/types"
+	"github.com/dhealthproject/dhealth-testnet/x/dhealthtestnet/types"
 )
 
 type (

@@ -18,7 +18,7 @@ import (
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 	"github.com/stretchr/testify/require"
 
-	"dhealth-testnet/app"
+	"github.com/dhealthproject/dhealth-testnet/app"
 )
 
 type (

@@ -1,9 +1,9 @@
 package dhealthtestnet
 
 import (
-	"dhealth-testnet/x/dhealthtestnet/keeper"
-	"dhealth-testnet/x/dhealthtestnet/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/dhealthproject/dhealth-testnet/x/dhealthtestnet/keeper"
+	"github.com/dhealthproject/dhealth-testnet/x/dhealthtestnet/types"
 )
 
 // InitGenesis initializes the module's state from a provided genesis state.

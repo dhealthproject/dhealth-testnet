@@ -3,9 +3,9 @@ package keeper_test
 import (
 	"testing"
 
-	testkeeper "dhealth-testnet/testutil/keeper"
-	"dhealth-testnet/x/dhealthtestnet/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
+	testkeeper "github.com/dhealthproject/dhealth-testnet/testutil/keeper"
+	"github.com/dhealthproject/dhealth-testnet/x/dhealthtestnet/types"
 	"github.com/stretchr/testify/require"
 )
 

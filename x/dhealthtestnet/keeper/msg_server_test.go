@@ -4,10 +4,10 @@ import (
 	"context"
 	"testing"
 
-	keepertest "dhealth-testnet/testutil/keeper"
-	"dhealth-testnet/x/dhealthtestnet/keeper"
-	"dhealth-testnet/x/dhealthtestnet/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
+	keepertest "github.com/dhealthproject/dhealth-testnet/testutil/keeper"
+	"github.com/dhealthproject/dhealth-testnet/x/dhealthtestnet/keeper"
+	"github.com/dhealthproject/dhealth-testnet/x/dhealthtestnet/types"
 	"github.com/stretchr/testify/require"
 )
 

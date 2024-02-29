@@ -36,10 +36,11 @@ import (
 	"github.com/spf13/cast"
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
+
 	// this line is used by starport scaffolding # root/moduleImport
 
-	"dhealth-testnet/app"
-	appparams "dhealth-testnet/app/params"
+	"github.com/dhealthproject/dhealth-testnet/app"
+	appparams "github.com/dhealthproject/dhealth-testnet/app/params"
 )
 
 // NewRootCmd creates a new root command for a Cosmos SDK application

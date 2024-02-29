@@ -5,7 +5,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/client/flags"
 	"github.com/spf13/cobra"
 
-	"dhealth-testnet/x/dhealthtestnet/types"
+	"github.com/dhealthproject/dhealth-testnet/x/dhealthtestnet/types"
 )
 
 func CmdQueryParams() *cobra.Command {

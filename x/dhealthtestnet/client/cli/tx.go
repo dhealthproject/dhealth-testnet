@@ -8,7 +8,7 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/client"
 	// "github.com/cosmos/cosmos-sdk/client/flags"
-	"dhealth-testnet/x/dhealthtestnet/types"
+	"github.com/dhealthproject/dhealth-testnet/x/dhealthtestnet/types"
 )
 
 var (

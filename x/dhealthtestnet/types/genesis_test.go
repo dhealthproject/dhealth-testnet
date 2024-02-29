@@ -3,7 +3,7 @@ package types_test
 import (
 	"testing"
 
-	"dhealth-testnet/x/dhealthtestnet/types"
+	"github.com/dhealthproject/dhealth-testnet/x/dhealthtestnet/types"
 	"github.com/stretchr/testify/require"
 )
 

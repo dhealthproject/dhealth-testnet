@@ -4,6 +4,7 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+
 	// this line is used by starport scaffolding # 1
 
 	"github.com/grpc-ecosystem/grpc-gateway/runtime"
@@ -11,14 +12,14 @@ import (
 
 	abci "github.com/cometbft/cometbft/abci/types"
 
-	"dhealth-testnet/x/dhealthtestnet/client/cli"
-	"dhealth-testnet/x/dhealthtestnet/keeper"
-	"dhealth-testnet/x/dhealthtestnet/types"
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/codec"
 	cdctypes "github.com/cosmos/cosmos-sdk/codec/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
+	"github.com/dhealthproject/dhealth-testnet/x/dhealthtestnet/client/cli"
+	"github.com/dhealthproject/dhealth-testnet/x/dhealthtestnet/keeper"
+	"github.com/dhealthproject/dhealth-testnet/x/dhealthtestnet/types"
 )
 
 var (

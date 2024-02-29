@@ -1,4 +1,4 @@
-module dhealth-testnet
+module github.com/dhealthproject/dhealth-testnet
 
 go 1.21
 

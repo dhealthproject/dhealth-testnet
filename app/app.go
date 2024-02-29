@@ -110,13 +110,14 @@ import (
 	ibctm "github.com/cosmos/ibc-go/v7/modules/light-clients/07-tendermint"
 	"github.com/spf13/cast"
 
-	dhealthtestnetmodule "dhealth-testnet/x/dhealthtestnet"
-	dhealthtestnetmodulekeeper "dhealth-testnet/x/dhealthtestnet/keeper"
-	dhealthtestnetmoduletypes "dhealth-testnet/x/dhealthtestnet/types"
+	dhealthtestnetmodule "github.com/dhealthproject/dhealth-testnet/x/dhealthtestnet"
+	dhealthtestnetmodulekeeper "github.com/dhealthproject/dhealth-testnet/x/dhealthtestnet/keeper"
+	dhealthtestnetmoduletypes "github.com/dhealthproject/dhealth-testnet/x/dhealthtestnet/types"
+
 	// this line is used by starport scaffolding # stargate/app/moduleImport
 
-	appparams "dhealth-testnet/app/params"
-	"dhealth-testnet/docs"
+	appparams "github.com/dhealthproject/dhealth-testnet/app/params"
+	"github.com/dhealthproject/dhealth-testnet/docs"
 )
 
 const (
