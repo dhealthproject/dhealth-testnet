@@ -39,6 +39,9 @@ import (
 
 	// this line is used by starport scaffolding # root/moduleImport
 
+	wasmkeeper "github.com/CosmWasm/wasmd/x/wasm/keeper"
+	wasmtypes "github.com/CosmWasm/wasmd/x/wasm/types"
+
 	"github.com/dhealthproject/dhealth-testnet/app"
 	appparams "github.com/dhealthproject/dhealth-testnet/app/params"
 )
@@ -280,11 +283,13 @@ func (a appCreator) newApp(
 		db,
 		traceStore,
 		true,
+		wasmtypes.EnableAllProposals,
 		skipUpgradeHeights,
 		cast.ToString(appOpts.Get(flags.FlagHome)),
 		cast.ToUint(appOpts.Get(server.FlagInvCheckPeriod)),
 		a.encodingConfig,
 		appOpts,
+		[]wasmkeeper.Option{},
 		baseapp.SetPruning(pruningOpts),
 		baseapp.SetMinGasPrices(cast.ToString(appOpts.Get(server.FlagMinGasPrices))),
 		baseapp.SetHaltHeight(cast.ToUint64(appOpts.Get(server.FlagHaltHeight))),
@@ -321,11 +326,13 @@ func (a appCreator) appExport(
 		db,
 		traceStore,
 		height == -1, // -1: no height provided
+		wasmtypes.EnableAllProposals,
 		map[int64]bool{},
 		homePath,
 		uint(1),
 		a.encodingConfig,
 		appOpts,
+		[]wasmkeeper.Option{},
 	)
 
 	if height != -1 {
