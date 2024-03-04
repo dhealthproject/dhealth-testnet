@@ -3,10 +3,10 @@ package dhealthtestnet_test
 import (
 	"testing"
 
-	keepertest "github.com/dhealthproject/dhealth-testnet/testutil/keeper"
-	"github.com/dhealthproject/dhealth-testnet/testutil/nullify"
-	"github.com/dhealthproject/dhealth-testnet/x/dhealthtestnet"
-	"github.com/dhealthproject/dhealth-testnet/x/dhealthtestnet/types"
+	keepertest "github.com/dhealthproject/dhealth-testnet/v2/testutil/keeper"
+	"github.com/dhealthproject/dhealth-testnet/v2/testutil/nullify"
+	"github.com/dhealthproject/dhealth-testnet/v2/x/dhealthtestnet"
+	"github.com/dhealthproject/dhealth-testnet/v2/x/dhealthtestnet/types"
 	"github.com/stretchr/testify/require"
 )
 

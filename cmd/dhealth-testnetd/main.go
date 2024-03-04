@@ -6,8 +6,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/server"
 	svrcmd "github.com/cosmos/cosmos-sdk/server/cmd"
 
-	"github.com/dhealthproject/dhealth-testnet/app"
-	"github.com/dhealthproject/dhealth-testnet/cmd/dhealth-testnetd/cmd"
+	"github.com/dhealthproject/dhealth-testnet/v2/app"
+	"github.com/dhealthproject/dhealth-testnet/v2/cmd/dhealth-testnetd/cmd"
 )
 
 func main() {

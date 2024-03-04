@@ -4,7 +4,7 @@ import (
 	"context"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/dhealthproject/dhealth-testnet/x/dhealthtestnet/types"
+	"github.com/dhealthproject/dhealth-testnet/v2/x/dhealthtestnet/types"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 )

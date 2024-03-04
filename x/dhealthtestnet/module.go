@@ -17,9 +17,9 @@ import (
 	cdctypes "github.com/cosmos/cosmos-sdk/codec/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
-	"github.com/dhealthproject/dhealth-testnet/x/dhealthtestnet/client/cli"
-	"github.com/dhealthproject/dhealth-testnet/x/dhealthtestnet/keeper"
-	"github.com/dhealthproject/dhealth-testnet/x/dhealthtestnet/types"
+	"github.com/dhealthproject/dhealth-testnet/v2/x/dhealthtestnet/client/cli"
+	"github.com/dhealthproject/dhealth-testnet/v2/x/dhealthtestnet/keeper"
+	"github.com/dhealthproject/dhealth-testnet/v2/x/dhealthtestnet/types"
 )
 
 var (

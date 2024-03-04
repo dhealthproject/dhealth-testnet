@@ -42,8 +42,8 @@ import (
 	wasmkeeper "github.com/CosmWasm/wasmd/x/wasm/keeper"
 	wasmtypes "github.com/CosmWasm/wasmd/x/wasm/types"
 
-	"github.com/dhealthproject/dhealth-testnet/app"
-	appparams "github.com/dhealthproject/dhealth-testnet/app/params"
+	"github.com/dhealthproject/dhealth-testnet/v2/app"
+	appparams "github.com/dhealthproject/dhealth-testnet/v2/app/params"
 
 	"github.com/cosmos/cosmos-sdk/client/snapshot"
 )

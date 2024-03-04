@@ -12,8 +12,8 @@ import (
 	storetypes "github.com/cosmos/cosmos-sdk/store/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	typesparams "github.com/cosmos/cosmos-sdk/x/params/types"
-	"github.com/dhealthproject/dhealth-testnet/x/dhealthtestnet/keeper"
-	"github.com/dhealthproject/dhealth-testnet/x/dhealthtestnet/types"
+	"github.com/dhealthproject/dhealth-testnet/v2/x/dhealthtestnet/keeper"
+	"github.com/dhealthproject/dhealth-testnet/v2/x/dhealthtestnet/types"
 	"github.com/stretchr/testify/require"
 )
 

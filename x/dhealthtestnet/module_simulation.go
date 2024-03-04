@@ -3,15 +3,15 @@ package dhealthtestnet
 import (
 	"math/rand"
 
-	"github.com/dhealthproject/dhealth-testnet/x/dhealthtestnet/types"
+	"github.com/dhealthproject/dhealth-testnet/v2/x/dhealthtestnet/types"
 
 	"github.com/cosmos/cosmos-sdk/baseapp"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 	"github.com/cosmos/cosmos-sdk/x/simulation"
-	"github.com/dhealthproject/dhealth-testnet/testutil/sample"
-	dhealthtestnetsimulation "github.com/dhealthproject/dhealth-testnet/x/dhealthtestnet/simulation"
+	"github.com/dhealthproject/dhealth-testnet/v2/testutil/sample"
+	dhealthtestnetsimulation "github.com/dhealthproject/dhealth-testnet/v2/x/dhealthtestnet/simulation"
 )
 
 // avoid unused import issue

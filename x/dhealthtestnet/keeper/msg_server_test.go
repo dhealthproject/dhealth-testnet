@@ -5,9 +5,9 @@ import (
 	"testing"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	keepertest "github.com/dhealthproject/dhealth-testnet/testutil/keeper"
-	"github.com/dhealthproject/dhealth-testnet/x/dhealthtestnet/keeper"
-	"github.com/dhealthproject/dhealth-testnet/x/dhealthtestnet/types"
+	keepertest "github.com/dhealthproject/dhealth-testnet/v2/testutil/keeper"
+	"github.com/dhealthproject/dhealth-testnet/v2/x/dhealthtestnet/keeper"
+	"github.com/dhealthproject/dhealth-testnet/v2/x/dhealthtestnet/types"
 	"github.com/stretchr/testify/require"
 )
 

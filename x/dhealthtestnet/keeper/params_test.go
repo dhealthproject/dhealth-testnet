@@ -3,8 +3,8 @@ package keeper_test
 import (
 	"testing"
 
-	testkeeper "github.com/dhealthproject/dhealth-testnet/testutil/keeper"
-	"github.com/dhealthproject/dhealth-testnet/x/dhealthtestnet/types"
+	testkeeper "github.com/dhealthproject/dhealth-testnet/v2/testutil/keeper"
+	"github.com/dhealthproject/dhealth-testnet/v2/x/dhealthtestnet/types"
 	"github.com/stretchr/testify/require"
 )
 
